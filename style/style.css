@@ -1,0 +1,260 @@
+/* Roboto font  */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@500;700&family=Jost:wght@100;200;300;400;500;600;700&family=League+Spartan:wght@100;200;300;400&family=Libre+Baskerville&family=Lobster&family=Merriweather:wght@300&family=Montserrat:wght@100;200;300;400;600&family=Pacifico&family=Poppins:wght@500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+/* global styling  */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700 !important;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600 !important;
+    transition: 0.3s ease !important;
+    color: #fff !important;
+}
+
+a:hover {
+    color: #9e9292 !important;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-intro {
+    margin-top: 40px;
+}
+
+.btn-main {
+    color: #fff;
+    padding: 14px 35px;
+    transition: 0.3s ease;
+}
+
+.btn-main:hover {
+    color: #fff;
+    background-color: rgb(64, 60, 60) !important;
+}
+
+.paragraph {
+    font-size: 1.1em;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* nav section  */
+
+nav {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( 90deg, rgb(89,86,233) 0%, rgb(0,208,156) 100%);
+}
+
+
+/* hero section  */
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 90deg, rgb(89,86,233) 0%, rgb(0,208,156) 100%);
+}
+
+.talk-btn {
+    animation-name: talk-shake;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes talk-shake{
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+
+/* about section  */
+
+.divider {
+    width: 100px;
+    height: 4px;
+    margin-top: 5px ;
+    background: linear-gradient( 90deg, rgb(89,86,233) 0%, rgb(0,208,156) 100%);
+}
+
+#about li {
+    margin-top: 5px;
+}
+
+#about i {
+    padding: 0.5em;
+    font-size: 0.85em;
+    border-radius: 100px;
+    background-color: blueviolet;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.about-ju {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* services section  */
+
+#services .box {
+    width: 32%;
+}
+
+/* work section  */
+
+#work ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#work ul li {
+    padding: 4px 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+#work ul li:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#work ul li a {
+    color: #222 !important;
+}
+
+
+#work .work-product {
+    position: relative;
+    overflow: hidden;
+}
+
+#work .work-product .overlay {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    font-size: 1.3em;
+    color: #fff;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#work .work-product:hover .overlay{
+    top: 0;
+    height: 100%;
+}
+
+
+/* proposal section  */
+
+#proposal {
+    z-index: 1;
+    position: relative;
+}
+
+#proposal .overflow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 90deg, rgba(89,86,233, 0.7), rgba(0,208,156, 0.7));
+}
+
+/* ..... */
+
+/* testimonials section  */
+
+.comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonials .shaking-img {
+    animation-name: horizontal-shaking;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+
+
+/* contact section  */
+
+#contact {
+    background: linear-gradient( 90deg, rgb(89,86,233) 0%, rgb(0,208,156) 100%);
+}
+
+input.form-control {
+    height: 54px;
+}
+
+form .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+/* footer section  */
+
+footer {
+    background: linear-gradient( 90deg, rgb(89,86,233) 0%, #00d09c 100%);
+}
+
+footer i {
+    padding: 5px;
+}

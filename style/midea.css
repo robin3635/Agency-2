@@ -1,0 +1,5 @@
+@media (max-width:540px){
+    #work ul {
+        display: none;
+    }
+}
